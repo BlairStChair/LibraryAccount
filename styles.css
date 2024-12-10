@@ -20,11 +20,18 @@ body{
 .navbar{
     background-color: #EFE5DB;
     display: flex;
-    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     grid-column: 1 / 2; 
     grid-row: 1 / 2;
 }
+
+.navbar .logo{
+    font-size: 5rem;
+}
+
 
 .navbar .menu ul{
     list-style: none;
@@ -52,7 +59,7 @@ body{
 }
 
 .footer{
-    background-color: #000000;
+    background-color: #1f1e1e;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
