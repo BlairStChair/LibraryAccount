@@ -32,6 +32,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 15fr;
     grid-template-rows: 25fr 1fr;
+    font-family: PublicSans-Regular;
 }
 
 .navbar{
@@ -73,6 +74,14 @@ body{
     background-color: #FCF8F5;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    padding: 30px;
+}
+
+.content .profile{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    color: #74685f;
 }
 
 .content .profile .profilePicture img{
@@ -80,6 +89,20 @@ body{
     border-radius: 50%;
     height: 150px;
     width: 150px;
+}
+
+.content .profile .welcomeText{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content .profile .welcomeText .hello{
+    font-size: 4.5rem;
+}
+
+.content .profile .welcomeText p{
+    font-size: 2.5rem;
 }
 
 .footer{
