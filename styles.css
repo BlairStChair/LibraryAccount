@@ -1,3 +1,20 @@
+@font-face {
+    font-family: PublicSans-Regular;
+    src: url(PublicSans/PublicSans-Regular.otf);
+  }
+@font-face {
+    font-family: PublicSans-Regular;
+    src: url(PublicSans/PublicSans-Regular.otf);
+}
+@font-face {
+    font-family: PublicSans-Regular;
+    src: url(PublicSans/PublicSans-Regular.otf);
+}
+@font-face {
+    font-family: PublicSans-Regular;
+    src: url(PublicSans/PublicSans-Regular.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -56,6 +73,13 @@ body{
     background-color: #FCF8F5;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+}
+
+.content .profile .profilePicture img{
+    background-color: #EFE5DB;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
 }
 
 .footer{
