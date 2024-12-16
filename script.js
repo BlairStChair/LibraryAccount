@@ -22,8 +22,33 @@ function addBookToLibrary(author, title, numberOfPages, read) {
     libraryArray.push(book);
 }
 
-addBookToLibrary('Stephen King', 'The Shining', 505, 1);
-addBookToLibrary('Harper Lee', 'Killing The Mockingbird', 336, 0);
-addBookToLibrary('George Orwell', '1984', 328, 1);
+addBookToLibrary('Stephen King', 'The Shining', 505, 'Yes');
+addBookToLibrary('Harper Lee', 'Killing The Mockingbird', 336, "No");
+addBookToLibrary('George Orwell', '1984', 328, "Yes");
+
+const books = document.querySelector(".books");
+const bookContainer = document.createElement("div");
+const bookCard = document.createElement("div");
+
+function displayBooks(){
+    for (let i = 0; i < libraryArray.length; i++) {
+        books.appendChild(bookContainer);
+        bookContainer.appendChild(bookCard);
+        var authorP = document.createElement("p");
+        authorP.textContent = `Author: ${libraryArray[i].author}`;
+        bookCard.appendChild(authorP);
+        var titleP = document.createElement("p");
+        titleP.textContent = `Title: ${libraryArray[i].title}`;
+        bookCard.appendChild(titleP);
+        var pagesP = document.createElement("p");
+        pagesP.textContent = `Pages: ${libraryArray[i].numberOfPages}`;
+        bookCard.appendChild(pagesP);
+        var readP = document.createElement("p");
+        readP.textContent = `Read: ${libraryArray[i].read}`;
+        bookCard.appendChild(readP);
+    }
+}
+
+displayBooks();
 
  
