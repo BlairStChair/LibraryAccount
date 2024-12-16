@@ -1,18 +1,18 @@
 @font-face {
-    font-family: PublicSans-Regular;
-    src: url(PublicSans/PublicSans-Regular.otf);
+    font-family: PublicSans-Thin;
+    src: url(PublicSans/PublicSans-Thin.otf);
   }
 @font-face {
     font-family: PublicSans-Regular;
     src: url(PublicSans/PublicSans-Regular.otf);
 }
 @font-face {
-    font-family: PublicSans-Regular;
-    src: url(PublicSans/PublicSans-Regular.otf);
+    font-family: PublicSans-Medium;
+    src: url(PublicSans/PublicSans-Medium.otf);
 }
 @font-face {
-    font-family: PublicSans-Regular;
-    src: url(PublicSans/PublicSans-Regular.otf);
+    font-family: PublicSans-Bold;
+    src: url(PublicSans/PublicSans-Bold.otf);
 }
 
 *{
@@ -31,14 +31,14 @@ body{
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 15fr;
-    grid-template-rows: 25fr 1fr;
+    grid-template-rows: 1fr auto;
     font-family: PublicSans-Regular;
 }
 
 .navbar{
     background-color: #EFE5DB;
     display: flex;
-    height: 100%;
+    min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -71,6 +71,7 @@ body{
 }
 
 .content{
+    min-height: 0;
     background-color: #FCF8F5;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -103,6 +104,43 @@ body{
 
 .content .profile .welcomeText p{
     font-size: 2.5rem;
+}
+
+.bookAdding{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20vh;
+    padding: 0 1.7vw;
+}
+
+.bookAdding #addBook{
+    background-color: #F8EFE7;
+    color: #74685f;
+    border-color: #c0b7af;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    font-family: PublicSans-Medium;
+    padding: 1vh 0.5vw;
+    font-size: 1.3rem;
+}
+
+.bookAdding #addBook:hover{
+    background-color: #c0b7af;
+    color: #F8EFE7;
+}
+
+.bookAdding #addBook:active{
+    background-color: #dbd2ca;
+    color: #5f564f;
+}
+
+.books{
+    border-radius: 5px;
+    background-color: #EFE5DB;
+    height: 100%;
+    width: 100%;
 }
 
 .footer{
