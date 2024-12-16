@@ -19,7 +19,11 @@ function Book(author, title, numberOfPages, read) {
 
 function addBookToLibrary(author, title, numberOfPages, read) {
     const book = new Book(author, title, numberOfPages, read);
-    libraryArray.push(Book);
+    libraryArray.push(book);
 }
+
+addBookToLibrary('Stephen King', 'The Shining', 505, 1);
+addBookToLibrary('Harper Lee', 'Killing The Mockingbird', 336, 0);
+addBookToLibrary('George Orwell', '1984', 328, 1);
 
  
