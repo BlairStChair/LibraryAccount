@@ -1,12 +1,3 @@
-//takes user's name to display welcome message
-const hello = document.querySelector(".hello");
-
-var name = prompt("Please enter your name :)");
-
-console.log(name);
-
-hello.textContent = "Hello " + name + "!";
-
 //book adding logic
 const libraryArray = [];
 
