@@ -62,6 +62,12 @@ function displayBooks(){
 }
 
 displayBooks();
-console.log(libraryArray);
+
+const addBook = document.querySelector("#addBook");
+const bookFormBg = document.querySelector(".bookFormBg");
+
+addBook.addEventListener("click", () => {
+    bookFormBg.style.display = "block";
+});
 
  
